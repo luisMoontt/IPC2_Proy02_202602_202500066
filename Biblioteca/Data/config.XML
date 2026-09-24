@@ -1,0 +1,19 @@
+<?xml version="1.0"?> 
+<config>
+    <listaCategrias>
+        <categoria padre="Libro">Novela</categoria>
+            <categoria padre="Novela">Novela de drama</categoria>
+            <categoria padre="Novela">Ciencia ficcion</categoria>
+        <categoria padre="Libro">Infantil<categoria>
+            <categoria padre="Infantil">Cuento</categoria>
+            <categoria padre="Infantil">Fantasia</categoria>
+    </listaCategrias>
+    <listaLibros>
+        <libro>
+            <ISBN>100001</ISBN>
+            <titulo>El principito</titulo>
+            <autor>Antoine de Saint-Exupery</autor>
+            <categoria>Fantasia</categoria>
+        </libro>
+    </listaLibros>
+</config> 
