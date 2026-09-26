@@ -333,5 +333,10 @@ namespace Biblioteca.Models
 
             return leftFound || currentFound || rightFound;
         }
+
+        public bool Exists(int isbn)
+        {
+            return Search(isbn) != null;
+        }
     }
 }

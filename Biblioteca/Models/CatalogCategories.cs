@@ -37,5 +37,12 @@ namespace Biblioteca.Models
                 Console.WriteLine("\nCategoria '" + categoryName + "' no encontrada.");
             }
         }
+        public bool Exists(string categoryName)
+        {
+            if (string.IsNullOrWhiteSpace(categoryName)) 
+                return false;
+
+            return root != null && root.findCategory(categoryName) != null;
+        }
     }
 }
