@@ -1,0 +1,32 @@
+digraph Categorias {
+    bgcolor=transparent;
+    node [shape=circle, style=filled, fillcolor=white, color=black, fontsize=10];
+    edge [color=gray40];
+    "Libro";
+    "Libro" -> "Literatura";
+    "Literatura";
+    "Literatura" -> "Novela";
+    "Novela";
+    "Literatura" -> "Realismo Magico";
+    "Realismo Magico";
+    "Literatura" -> "Novela Latinoamericana";
+    "Novela Latinoamericana";
+    "Libro" -> "Teatro";
+    "Teatro";
+    "Teatro" -> "Drama Moderno";
+    "Drama Moderno";
+    "Teatro" -> "Teatro Español";
+    "Teatro Español";
+    "Libro" -> "Poesia";
+    "Poesia";
+    "Poesia" -> "Poesia General";
+    "Poesia General";
+    "Libro" -> "Ciencia Ficcion";
+    "Ciencia Ficcion";
+    "Ciencia Ficcion" -> "Distopica";
+    "Distopica";
+    "Libro" -> "Internet";
+    "Internet";
+    "Internet" -> "Blogueros";
+    "Blogueros";
+}

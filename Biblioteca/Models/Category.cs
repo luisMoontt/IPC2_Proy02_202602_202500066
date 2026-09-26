@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 
 namespace Biblioteca.Models
 {
@@ -100,6 +101,53 @@ namespace Biblioteca.Models
                         }
                     }
                 }
+            }
+        }
+////////////////////////////////////////////////////////////////////////////////////////
+        public Category GetNextAlphabetical(string afterName)
+        {
+            Category siguiente = null;
+            for (int i = 0; i < sons.Length; i++)
+            {
+                if (sons[i] == null) continue;
+                if (afterName != null && string.Compare(sons[i].name, afterName, StringComparison.OrdinalIgnoreCase) <= 0)
+                    continue;
+                if (siguiente == null || string.Compare(sons[i].name, siguiente.name, StringComparison.OrdinalIgnoreCase) < 0)
+                    siguiente = sons[i];
+            }
+            return siguiente;
+        }
+
+        public void AppendDot(StringBuilder dot)
+        {
+            dot.AppendLine($"    \"{name}\";");
+            for (int i = 0; i < sons.Length; i++)
+            {
+                if (sons[i] != null)
+                {
+                    dot.AppendLine($"    \"{name}\" -> \"{sons[i].getName()}\";");
+                    sons[i].AppendDot(dot);
+                }
+            }
+        }
+
+        public void AppendTree(StringBuilder sb, int depth, CatalogBooks books, bool includeBooks)
+        {
+            string indent = new string(' ', depth * 4);
+            if (depth == 0)
+                sb.AppendLine(name);
+            else
+                sb.AppendLine(indent + "|-" + name);
+
+            if (includeBooks && books != null)
+            {
+                books.AppendBooksByCategory(sb, name, depth + 1);
+            }
+
+            Category actual = null;
+            while ((actual = GetNextAlphabetical(actual?.getName())) != null)
+            {
+                actual.AppendTree(sb, depth + 1, books, includeBooks);
             }
         }
     }
