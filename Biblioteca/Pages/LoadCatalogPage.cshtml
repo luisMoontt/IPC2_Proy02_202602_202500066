@@ -6,6 +6,7 @@
 
 <div class="container mt-4">
     <h3>@ViewData["Title"]</h3>
+    <p class="text-muted">Arrastra o selecciona un archivo XML para poblar los catálogos del sistema.</p>
 
     @if (TempData["SuccessMessage"] != null)
     {
@@ -34,20 +35,21 @@
             
             <div class="d-flex justify-content-center gap-2">
                 <button type="button" class="btn btn-outline-primary" onclick="document.getElementById('xmlFile').click();">
-                    Examinar
+                    Examinar archivo
                 </button>
             </div>
 
             <!-- Inspección del archivo -->
             <div id="fileInfo" class="mt-3 text-start d-none">
                 <div class="card body p-2 bg-white border">
-                    <strong>Archivo</strong> <span id="fileName"></span><br />
+                    <strong>Archivo seleccionado:</strong> <span id="fileName"></span><br />
+                    <strong>Tamaño:</strong> <span id="fileSize"></span>
                 </div>
             </div>
         </div>
 
         <button type="submit" class="btn btn-success w-100" id="btnSubmit" disabled>
-            Cargar
+            Cargar e Importar Catálogo
         </button>
     </form>
 </div>

@@ -101,7 +101,7 @@ namespace Biblioteca.Controllers
                         }
                     }
                 }
-                Console.WriteLine("CARGADOOOOOO");
+                Console.WriteLine("asasaaaaaaaaaaaa");
                 TempData["SuccessMessage"] = $"Proceso completado: {categoriesAdded} categorías agregadas, {booksAdded} libros agregados ({booksSkipped} duplicados omitidos).";
             }
             catch (Exception ex)
