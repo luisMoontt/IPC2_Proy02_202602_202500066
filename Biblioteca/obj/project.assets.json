@@ -1,13 +1,4 @@
 {
-<<<<<<< HEAD
-  "version": 3,
-  "targets": {
-    "net8.0": {}
-  },
-  "libraries": {},
-  "projectFileDependencyGroups": {
-    "net8.0": []
-=======
   "version": 4,
   "targets": {
     "net10.0": {}
@@ -15,7 +6,6 @@
   "libraries": {},
   "projectFileDependencyGroups": {
     "net10.0": []
->>>>>>> origin/release/v1.0.1
   },
   "packageFolders": {
     "C:\\Users\\Admin\\.nuget\\packages\\": {}
@@ -33,24 +23,15 @@
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-<<<<<<< HEAD
-        "net8.0"
-=======
         "net10.0"
->>>>>>> origin/release/v1.0.1
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-<<<<<<< HEAD
-        "net8.0": {
-          "targetAlias": "net8.0",
-=======
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
->>>>>>> origin/release/v1.0.1
           "projectReferences": {}
         }
       },
@@ -62,14 +43,6 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-<<<<<<< HEAD
-        "auditMode": "direct"
-      }
-    },
-    "frameworks": {
-      "net8.0": {
-        "targetAlias": "net8.0",
-=======
         "auditMode": "all"
       },
       "SdkAnalysisLevel": "10.0.400"
@@ -78,7 +51,6 @@
       "net10.0": {
         "framework": "net10.0",
         "targetAlias": "net10.0",
->>>>>>> origin/release/v1.0.1
         "imports": [
           "net461",
           "net462",
@@ -91,19 +63,13 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-<<<<<<< HEAD
-=======
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
           },
->>>>>>> origin/release/v1.0.1
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.425/PortableRuntimeIdentifierGraph.json"
-=======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
@@ -519,7 +485,6 @@
           "System.Xml.XPath": "(,4.3.32767]",
           "System.Xml.XPath.XDocument": "(,5.0.32767]"
         }
->>>>>>> origin/release/v1.0.1
       }
     }
   }

@@ -1,0 +1,637 @@
+<?xml version="1.0"?>
+<config>
+  <listaCategorias>
+    <categoria>Tecnologia</categoria>
+    <categoria padre="Tecnologia">Programacion</categoria>
+    <categoria padre="Tecnologia">Redes</categoria>
+    <categoria>Ciencia</categoria>
+    <categoria padre="Ciencia">Fisica</categoria>
+    <categoria padre="Ciencia">Quimica</categoria>
+    <categoria>Ciencia Ficcion</categoria>
+    <categoria padre="Ciencia Ficcion">Distopica</categoria>
+    <categoria padre="Ciencia Ficcion">Space Opera</categoria>
+    <categoria>Literatura</categoria>
+    <categoria padre="Literatura">Novela</categoria>
+    <categoria padre="Literatura">Cuento</categoria>
+    <categoria>Poesia</categoria>
+    <categoria padre="Poesia">Poesia Clasica</categoria>
+    <categoria padre="Poesia">Poesia Moderna</categoria>
+    <categoria>Historia</categoria>
+    <categoria padre="Historia">Antigua</categoria>
+    <categoria padre="Historia">Moderna</categoria>
+    <categoria>Filosofia</categoria>
+    <categoria padre="Filosofia">Etica</categoria>
+    <categoria padre="Filosofia">Metafisica</categoria>
+    <categoria>Arte</categoria>
+    <categoria padre="Arte">Pintura</categoria>
+    <categoria padre="Arte">Musica</categoria>
+    <categoria>Economia</categoria>
+    <categoria padre="Economia">Finanzas</categoria>
+    <categoria padre="Economia">Macroeconomia</categoria>
+    <categoria>Viajes</categoria>
+    <categoria padre="Viajes">Europa</categoria>
+    <categoria padre="Viajes">Asia</categoria>
+  </listaCategorias>
+  <listaLibros>
+    <libro>
+      <ISBN>3001</ISBN>
+      <titulo>Codigo Limpio</titulo>
+      <autor>Robert Martin</autor>
+      <categoria>Programacion</categoria>
+    </libro>
+    <libro>
+      <ISBN>3002</ISBN>
+      <titulo>El Programador Pragmatico</titulo>
+      <autor>Andrew Hunt</autor>
+      <categoria>Programacion</categoria>
+    </libro>
+    <libro>
+      <ISBN>3003</ISBN>
+      <titulo>Refactorizacion</titulo>
+      <autor>Martin Fowler</autor>
+      <categoria>Programacion</categoria>
+    </libro>
+    <libro>
+      <ISBN>3004</ISBN>
+      <titulo>El Mito del Hombre-Mes</titulo>
+      <autor>Frederick Brooks</autor>
+      <categoria>Programacion</categoria>
+    </libro>
+    <libro>
+      <ISBN>3005</ISBN>
+      <titulo>Hackers y Pintores</titulo>
+      <autor>Paul Graham</autor>
+      <categoria>Programacion</categoria>
+    </libro>
+    <libro>
+      <ISBN>3006</ISBN>
+      <titulo>Cosmos</titulo>
+      <autor>Carl Sagan</autor>
+      <categoria>Fisica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3007</ISBN>
+      <titulo>Una Breve Historia del Tiempo</titulo>
+      <autor>Stephen Hawking</autor>
+      <categoria>Fisica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3008</ISBN>
+      <titulo>El Universo Elegante</titulo>
+      <autor>Brian Greene</autor>
+      <categoria>Fisica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3009</ISBN>
+      <titulo>Seis Piezas Faciles</titulo>
+      <autor>Richard Feynman</autor>
+      <categoria>Fisica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3010</ISBN>
+      <titulo>El Universo en una Cascara de Nuez</titulo>
+      <autor>Stephen Hawking</autor>
+      <categoria>Fisica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3011</ISBN>
+      <titulo>1984</titulo>
+      <autor>George Orwell</autor>
+      <categoria>Distopica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3012</ISBN>
+      <titulo>Un Mundo Feliz</titulo>
+      <autor>Aldous Huxley</autor>
+      <categoria>Distopica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3013</ISBN>
+      <titulo>Fahrenheit 451</titulo>
+      <autor>Ray Bradbury</autor>
+      <categoria>Distopica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3014</ISBN>
+      <titulo>Nosotros</titulo>
+      <autor>Yevgeni Zamiatin</autor>
+      <categoria>Distopica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3015</ISBN>
+      <titulo>El Cuento de la Criada</titulo>
+      <autor>Margaret Atwood</autor>
+      <categoria>Distopica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3016</ISBN>
+      <titulo>El Gran Gatsby</titulo>
+      <autor>F. Scott Fitzgerald</autor>
+      <categoria>Novela</categoria>
+    </libro>
+    <libro>
+      <ISBN>3017</ISBN>
+      <titulo>Matar a un Ruisenor</titulo>
+      <autor>Harper Lee</autor>
+      <categoria>Novela</categoria>
+    </libro>
+    <libro>
+      <ISBN>3018</ISBN>
+      <titulo>El Guardian entre el Centeno</titulo>
+      <autor>J.D. Salinger</autor>
+      <categoria>Novela</categoria>
+    </libro>
+    <libro>
+      <ISBN>3019</ISBN>
+      <titulo>Crimen y Castigo</titulo>
+      <autor>Fiodor Dostoyevski</autor>
+      <categoria>Novela</categoria>
+    </libro>
+    <libro>
+      <ISBN>3020</ISBN>
+      <titulo>La Metamorfosis</titulo>
+      <autor>Franz Kafka</autor>
+      <categoria>Novela</categoria>
+    </libro>
+    <libro>
+      <ISBN>3021</ISBN>
+      <titulo>La Divina Comedia</titulo>
+      <autor>Dante Alighieri</autor>
+      <categoria>Poesia Clasica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3022</ISBN>
+      <titulo>Hojas de Hierba</titulo>
+      <autor>Walt Whitman</autor>
+      <categoria>Poesia Clasica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3023</ISBN>
+      <titulo>Las Flores del Mal</titulo>
+      <autor>Charles Baudelaire</autor>
+      <categoria>Poesia Clasica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3024</ISBN>
+      <titulo>La Iliada</titulo>
+      <autor>Homero</autor>
+      <categoria>Poesia Clasica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3025</ISBN>
+      <titulo>La Odisea</titulo>
+      <autor>Homero</autor>
+      <categoria>Poesia Clasica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3026</ISBN>
+      <titulo>Los Nueve Libros de la Historia</titulo>
+      <autor>Herodoto</autor>
+      <categoria>Antigua</categoria>
+    </libro>
+    <libro>
+      <ISBN>3027</ISBN>
+      <titulo>Historia de la Guerra del Peloponeso</titulo>
+      <autor>Tucidides</autor>
+      <categoria>Antigua</categoria>
+    </libro>
+    <libro>
+      <ISBN>3028</ISBN>
+      <titulo>Vidas Paralelas</titulo>
+      <autor>Plutarco</autor>
+      <categoria>Antigua</categoria>
+    </libro>
+    <libro>
+      <ISBN>3029</ISBN>
+      <titulo>La Guerra de las Galias</titulo>
+      <autor>Julio Cesar</autor>
+      <categoria>Antigua</categoria>
+    </libro>
+    <libro>
+      <ISBN>3030</ISBN>
+      <titulo>Anales</titulo>
+      <autor>Tacito</autor>
+      <categoria>Antigua</categoria>
+    </libro>
+    <libro>
+      <ISBN>3031</ISBN>
+      <titulo>Etica a Nicomaco</titulo>
+      <autor>Aristoteles</autor>
+      <categoria>Etica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3032</ISBN>
+      <titulo>Mas Alla del Bien y del Mal</titulo>
+      <autor>Friedrich Nietzsche</autor>
+      <categoria>Etica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3033</ISBN>
+      <titulo>Asi Hablo Zaratustra</titulo>
+      <autor>Friedrich Nietzsche</autor>
+      <categoria>Etica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3034</ISBN>
+      <titulo>Utilitarismo</titulo>
+      <autor>John Stuart Mill</autor>
+      <categoria>Etica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3035</ISBN>
+      <titulo>Fundamentacion de la Metafisica de las Costumbres</titulo>
+      <autor>Immanuel Kant</autor>
+      <categoria>Etica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3036</ISBN>
+      <titulo>Modos de Ver</titulo>
+      <autor>John Berger</autor>
+      <categoria>Pintura</categoria>
+    </libro>
+    <libro>
+      <ISBN>3037</ISBN>
+      <titulo>Historia del Arte</titulo>
+      <autor>E.H. Gombrich</autor>
+      <categoria>Pintura</categoria>
+    </libro>
+    <libro>
+      <ISBN>3038</ISBN>
+      <titulo>Vidas de los Artistas</titulo>
+      <autor>Giorgio Vasari</autor>
+      <categoria>Pintura</categoria>
+    </libro>
+    <libro>
+      <ISBN>3039</ISBN>
+      <titulo>El Loco por la Vida</titulo>
+      <autor>Irving Stone</autor>
+      <categoria>Pintura</categoria>
+    </libro>
+    <libro>
+      <ISBN>3040</ISBN>
+      <titulo>La Joven de la Perla</titulo>
+      <autor>Tracy Chevalier</autor>
+      <categoria>Pintura</categoria>
+    </libro>
+    <libro>
+      <ISBN>3041</ISBN>
+      <titulo>El Inversor Inteligente</titulo>
+      <autor>Benjamin Graham</autor>
+      <categoria>Finanzas</categoria>
+    </libro>
+    <libro>
+      <ISBN>3042</ISBN>
+      <titulo>Padre Rico, Padre Pobre</titulo>
+      <autor>Robert Kiyosaki</autor>
+      <categoria>Finanzas</categoria>
+    </libro>
+    <libro>
+      <ISBN>3043</ISBN>
+      <titulo>Un Paseo Aleatorio por Wall Street</titulo>
+      <autor>Burton Malkiel</autor>
+      <categoria>Finanzas</categoria>
+    </libro>
+    <libro>
+      <ISBN>3044</ISBN>
+      <titulo>El Millonario de la Puerta de al Lado</titulo>
+      <autor>Thomas Stanley</autor>
+      <categoria>Finanzas</categoria>
+    </libro>
+    <libro>
+      <ISBN>3045</ISBN>
+      <titulo>Acciones Ordinarias y Beneficios Extraordinarios</titulo>
+      <autor>Philip Fisher</autor>
+      <categoria>Finanzas</categoria>
+    </libro>
+    <libro>
+      <ISBN>3046</ISBN>
+      <titulo>Paris Era una Fiesta</titulo>
+      <autor>Ernest Hemingway</autor>
+      <categoria>Europa</categoria>
+    </libro>
+    <libro>
+      <ISBN>3047</ISBN>
+      <titulo>Ni Aqui ni Alla</titulo>
+      <autor>Bill Bryson</autor>
+      <categoria>Europa</categoria>
+    </libro>
+    <libro>
+      <ISBN>3048</ISBN>
+      <titulo>Bajo el Sol de la Toscana</titulo>
+      <autor>Frances Mayes</autor>
+      <categoria>Europa</categoria>
+    </libro>
+    <libro>
+      <ISBN>3049</ISBN>
+      <titulo>Un Año en Provenza</titulo>
+      <autor>Peter Mayle</autor>
+      <categoria>Europa</categoria>
+    </libro>
+    <libro>
+      <ISBN>3050</ISBN>
+      <titulo>Viajes con Charley</titulo>
+      <autor>John Steinbeck</autor>
+      <categoria>Europa</categoria>
+    </libro>
+    <libro>
+      <ISBN>3051</ISBN>
+      <titulo>TCP/IP Ilustrado</titulo>
+      <autor>Richard Stevens</autor>
+      <categoria>Redes</categoria>
+    </libro>
+    <libro>
+      <ISBN>3052</ISBN>
+      <titulo>Redes de Computadores</titulo>
+      <autor>Andrew Tanenbaum</autor>
+      <categoria>Redes</categoria>
+    </libro>
+    <libro>
+      <ISBN>3053</ISBN>
+      <titulo>El Guerrero de la Red</titulo>
+      <autor>Gary Donahue</autor>
+      <categoria>Redes</categoria>
+    </libro>
+    <libro>
+      <ISBN>3054</ISBN>
+      <titulo>Wireshark para Principiantes</titulo>
+      <autor>Laura Chappell</autor>
+      <categoria>Redes</categoria>
+    </libro>
+    <libro>
+      <ISBN>3055</ISBN>
+      <titulo>Redes para Dummies</titulo>
+      <autor>Doug Lowe</autor>
+      <categoria>Redes</categoria>
+    </libro>
+    <libro>
+      <ISBN>3056</ISBN>
+      <titulo>La Cuchara Menguante</titulo>
+      <autor>Sam Kean</autor>
+      <categoria>Quimica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3057</ISBN>
+      <titulo>Tio Tungsteno</titulo>
+      <autor>Oliver Sacks</autor>
+      <categoria>Quimica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3058</ISBN>
+      <titulo>Los Botones de Napoleon</titulo>
+      <autor>Penny Le Couteur</autor>
+      <categoria>Quimica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3059</ISBN>
+      <titulo>El Sistema Periodico</titulo>
+      <autor>Primo Levi</autor>
+      <categoria>Quimica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3060</ISBN>
+      <titulo>Una Breve Historia de Casi Todo</titulo>
+      <autor>Bill Bryson</autor>
+      <categoria>Quimica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3061</ISBN>
+      <titulo>Fundacion</titulo>
+      <autor>Isaac Asimov</autor>
+      <categoria>Space Opera</categoria>
+    </libro>
+    <libro>
+      <ISBN>3062</ISBN>
+      <titulo>Dune</titulo>
+      <autor>Frank Herbert</autor>
+      <categoria>Space Opera</categoria>
+    </libro>
+    <libro>
+      <ISBN>3063</ISBN>
+      <titulo>Solaris</titulo>
+      <autor>Stanislaw Lem</autor>
+      <categoria>Space Opera</categoria>
+    </libro>
+    <libro>
+      <ISBN>3064</ISBN>
+      <titulo>Yo, Robot</titulo>
+      <autor>Isaac Asimov</autor>
+      <categoria>Space Opera</categoria>
+    </libro>
+    <libro>
+      <ISBN>3065</ISBN>
+      <titulo>La Guerra de los Mundos</titulo>
+      <autor>H.G. Wells</autor>
+      <categoria>Space Opera</categoria>
+    </libro>
+    <libro>
+      <ISBN>3066</ISBN>
+      <titulo>Narraciones Extraordinarias</titulo>
+      <autor>Edgar Allan Poe</autor>
+      <categoria>Cuento</categoria>
+    </libro>
+    <libro>
+      <ISBN>3067</ISBN>
+      <titulo>Cuentos</titulo>
+      <autor>Anton Chejov</autor>
+      <categoria>Cuento</categoria>
+    </libro>
+    <libro>
+      <ISBN>3068</ISBN>
+      <titulo>Nueve Cuentos</titulo>
+      <autor>J.D. Salinger</autor>
+      <categoria>Cuento</categoria>
+    </libro>
+    <libro>
+      <ISBN>3069</ISBN>
+      <titulo>Dublineses</titulo>
+      <autor>James Joyce</autor>
+      <categoria>Cuento</categoria>
+    </libro>
+    <libro>
+      <ISBN>3070</ISBN>
+      <titulo>Relatos de Kolimá</titulo>
+      <autor>Varlam Shalamov</autor>
+      <categoria>Cuento</categoria>
+    </libro>
+    <libro>
+      <ISBN>3071</ISBN>
+      <titulo>Aullido</titulo>
+      <autor>Allen Ginsberg</autor>
+      <categoria>Poesia Moderna</categoria>
+    </libro>
+    <libro>
+      <ISBN>3072</ISBN>
+      <titulo>Ariel</titulo>
+      <autor>Sylvia Plath</autor>
+      <categoria>Poesia Moderna</categoria>
+    </libro>
+    <libro>
+      <ISBN>3073</ISBN>
+      <titulo>Cuatro Cuartetos</titulo>
+      <autor>T.S. Eliot</autor>
+      <categoria>Poesia Moderna</categoria>
+    </libro>
+    <libro>
+      <ISBN>3074</ISBN>
+      <titulo>Poemas</titulo>
+      <autor>Emily Dickinson</autor>
+      <categoria>Poesia Moderna</categoria>
+    </libro>
+    <libro>
+      <ISBN>3075</ISBN>
+      <titulo>La Tierra Baldia</titulo>
+      <autor>T.S. Eliot</autor>
+      <categoria>Poesia Moderna</categoria>
+    </libro>
+    <libro>
+      <ISBN>3076</ISBN>
+      <titulo>Armas, Germenes y Acero</titulo>
+      <autor>Jared Diamond</autor>
+      <categoria>Moderna</categoria>
+    </libro>
+    <libro>
+      <ISBN>3077</ISBN>
+      <titulo>Sapiens</titulo>
+      <autor>Yuval Noah Harari</autor>
+      <categoria>Moderna</categoria>
+    </libro>
+    <libro>
+      <ISBN>3078</ISBN>
+      <titulo>Los Cañones de Agosto</titulo>
+      <autor>Barbara Tuchman</autor>
+      <categoria>Moderna</categoria>
+    </libro>
+    <libro>
+      <ISBN>3079</ISBN>
+      <titulo>La Otra Historia de los Estados Unidos</titulo>
+      <autor>Howard Zinn</autor>
+      <categoria>Moderna</categoria>
+    </libro>
+    <libro>
+      <ISBN>3080</ISBN>
+      <titulo>Historia del Siglo XX</titulo>
+      <autor>Eric Hobsbawm</autor>
+      <categoria>Moderna</categoria>
+    </libro>
+    <libro>
+      <ISBN>3081</ISBN>
+      <titulo>Meditaciones Metafisicas</titulo>
+      <autor>Rene Descartes</autor>
+      <categoria>Metafisica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3082</ISBN>
+      <titulo>Critica de la Razon Pura</titulo>
+      <autor>Immanuel Kant</autor>
+      <categoria>Metafisica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3083</ISBN>
+      <titulo>Ser y Tiempo</titulo>
+      <autor>Martin Heidegger</autor>
+      <categoria>Metafisica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3084</ISBN>
+      <titulo>El Mundo como Voluntad y Representacion</titulo>
+      <autor>Arthur Schopenhauer</autor>
+      <categoria>Metafisica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3085</ISBN>
+      <titulo>Tractatus Logico-Philosophicus</titulo>
+      <autor>Ludwig Wittgenstein</autor>
+      <categoria>Metafisica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3086</ISBN>
+      <titulo>Cronicas</titulo>
+      <autor>Bob Dylan</autor>
+      <categoria>Musica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3087</ISBN>
+      <titulo>Tu Cerebro y la Musica</titulo>
+      <autor>Daniel Levitin</autor>
+      <categoria>Musica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3088</ISBN>
+      <titulo>Eramos unos Niños</titulo>
+      <autor>Patti Smith</autor>
+      <categoria>Musica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3089</ISBN>
+      <titulo>Beethoven</titulo>
+      <autor>Jan Swafford</autor>
+      <categoria>Musica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3090</ISBN>
+      <titulo>El Ruido Eterno</titulo>
+      <autor>Alex Ross</autor>
+      <categoria>Musica</categoria>
+    </libro>
+    <libro>
+      <ISBN>3091</ISBN>
+      <titulo>La Riqueza de las Naciones</titulo>
+      <autor>Adam Smith</autor>
+      <categoria>Macroeconomia</categoria>
+    </libro>
+    <libro>
+      <ISBN>3092</ISBN>
+      <titulo>El Capital</titulo>
+      <autor>Karl Marx</autor>
+      <categoria>Macroeconomia</categoria>
+    </libro>
+    <libro>
+      <ISBN>3093</ISBN>
+      <titulo>Freakonomics</titulo>
+      <autor>Steven Levitt</autor>
+      <categoria>Macroeconomia</categoria>
+    </libro>
+    <libro>
+      <ISBN>3094</ISBN>
+      <titulo>Teoria General del Empleo, el Interes y el Dinero</titulo>
+      <autor>John Maynard Keynes</autor>
+      <categoria>Macroeconomia</categoria>
+    </libro>
+    <libro>
+      <ISBN>3095</ISBN>
+      <titulo>Economia Basica</titulo>
+      <autor>Thomas Sowell</autor>
+      <categoria>Macroeconomia</categoria>
+    </libro>
+    <libro>
+      <ISBN>3096</ISBN>
+      <titulo>El Gran Bazar Ferroviario</titulo>
+      <autor>Paul Theroux</autor>
+      <categoria>Asia</categoria>
+    </libro>
+    <libro>
+      <ISBN>3097</ISBN>
+      <titulo>Shantaram</titulo>
+      <autor>Gregory David Roberts</autor>
+      <categoria>Asia</categoria>
+    </libro>
+    <libro>
+      <ISBN>3098</ISBN>
+      <titulo>Come, Reza, Ama</titulo>
+      <autor>Elizabeth Gilbert</autor>
+      <categoria>Asia</categoria>
+    </libro>
+    <libro>
+      <ISBN>3099</ISBN>
+      <titulo>Un Paseo por el Hindu Kush</titulo>
+      <autor>Eric Newby</autor>
+      <categoria>Asia</categoria>
+    </libro>
+    <libro>
+      <ISBN>3100</ISBN>
+      <titulo>Noche de Video en Katmandu</titulo>
+      <autor>Pico Iyer</autor>
+      <categoria>Asia</categoria>
+    </libro>
+  </listaLibros>
+</config>

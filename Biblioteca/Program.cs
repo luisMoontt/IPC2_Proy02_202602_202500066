@@ -2,6 +2,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddControllers(); 
+builder.Services.AddSingleton<Biblioteca.Services.GraphService>();
 builder.Services.AddSingleton<Biblioteca.Services.LibraryService>();
 
 var app = builder.Build();
@@ -21,6 +23,7 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapStaticAssets();
+app.MapControllers();   
 app.MapRazorPages()
    .WithStaticAssets();
 

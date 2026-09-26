@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 
 namespace Biblioteca.Models
 {
@@ -14,7 +15,7 @@ namespace Biblioteca.Models
             this.Book = book;
             this.Left = null;
             this.Right = null;
-            this.Height = 1; // Un nodo hoja nuevo inicia con altura 1
+            this.Height = 1;
         }
     }
 
@@ -26,11 +27,8 @@ namespace Biblioteca.Models
         {
             this.root = null;
         }
-
-        // ==========================================
-        // MÉTODOS AUXILIARES DE BALANCEO AVL
-        // ==========================================
 ///////////////////////////////////////////////////////////////////////
+/// 
         private int GetHeight(BookNode node)
         {
             return node == null ? 0 : node.Height;
@@ -73,10 +71,7 @@ namespace Biblioteca.Models
 
             return y;
         }
-
-        // ==========================================
-        // 1. INSERCIÓN DE LIBROS (ISBN ÚNICO)
-        // ==========================================
+///////////////////////////////////////////////////////////////////////
 
         public bool Insert(Book book)
         {
@@ -142,10 +137,7 @@ namespace Biblioteca.Models
 
             return node;
         }
-
-        // ==========================================
-        // 2. BÚSQUEDA DE LIBRO POR ISBN
-        // ==========================================
+/////////////////////////////////////////////////////////////////////////
 
         public Book Search(int isbn)
         {
@@ -167,10 +159,7 @@ namespace Biblioteca.Models
 
             return SearchRecursive(node.Right, isbn);
         }
-
-        // ==========================================
-        // 3. ELIMINACIÓN DE UN LIBRO POR ISBN
-        // ==========================================
+//////////////////////////////////////////////////////////////////////////////////////
 
         public bool Delete(int isbn)
         {
@@ -198,7 +187,6 @@ namespace Biblioteca.Models
             }
             else
             {
-                // Nodo con un solo hijo o sin hijos
                 if ((node.Left == null) || (node.Right == null))
                 {
                     BookNode temp = node.Left != null ? node.Left : node.Right;
@@ -215,7 +203,6 @@ namespace Biblioteca.Models
                 }
                 else
                 {
-                    // Nodo con dos hijos: Obtener el sucesor en inorden (mínimo del subárbol derecho)
                     BookNode temp = GetMinNode(node.Right);
                     node.Book = temp.Book;
                     node.Right = DeleteRecursive(node.Right, temp.Book.getISBN());
@@ -224,10 +211,9 @@ namespace Biblioteca.Models
 
             if (node == null) return node;
 
-            // Actualizar altura
+  
             node.Height = 1 + Max(GetHeight(node.Left), GetHeight(node.Right));
 
-            // Balancear
             int balance = GetBalanceFactor(node);
 
             if (balance > 1 && GetBalanceFactor(node.Left) >= 0)
@@ -250,10 +236,7 @@ namespace Biblioteca.Models
 
             return node;
         }
-
-        // ==========================================
-        // 4. LIBRO CON MENOR Y MAYOR ISBN
-        // ==========================================
+////////////////////////////////////////////////////////////////////////
 
         public Book GetMinBook()
         {
@@ -282,9 +265,7 @@ namespace Biblioteca.Models
             return current.Book;
         }
 
-        // ==========================================
-        // 5. IMPRIMIR EN ORDEN ASCENDENTE (INORDEN)
-        // ==========================================
+/////////////////////////////////////////////////////////////////////////////////////
 
         public void PrintAscending()
         {
@@ -302,9 +283,7 @@ namespace Biblioteca.Models
             }
         }
 
-        // ==========================================
-        // 6. LISTAR LIBROS POR CATEGORÍA
-        // ==========================================
+////////////////////////////////////////////////////////////////////
 
         public void ListByCategory(string category)
         {
@@ -337,6 +316,54 @@ namespace Biblioteca.Models
         public bool Exists(int isbn)
         {
             return Search(isbn) != null;
+        }
+////////////////////////////////////////////////////////////////////////////////////////////////
+        public void AppendDot(StringBuilder dot)
+        {
+            if (root != null)
+                AppendDotRecursive(root, dot);
+        }
+
+        private void AppendDotRecursive(BookNode node, StringBuilder dot)
+        {
+            string label = TrimTitle(node.Book.getTitle()) + "\\n" + node.Book.getISBN();
+            dot.AppendLine($"    {node.Book.getISBN()} [label=\"{label}\"];");
+
+            if (node.Left != null)
+            {
+                dot.AppendLine($"    {node.Book.getISBN()} -> {node.Left.Book.getISBN()};");
+                AppendDotRecursive(node.Left, dot);
+            }
+            if (node.Right != null)
+            {
+                dot.AppendLine($"    {node.Book.getISBN()} -> {node.Right.Book.getISBN()};");
+                AppendDotRecursive(node.Right, dot);
+            }
+        }
+
+        private string TrimTitle(string title)
+        {
+            if (string.IsNullOrEmpty(title)) return "";
+            return title.Length > 8 ? title.Substring(0, 8) + "." : title;
+        }
+
+        public void AppendBooksByCategory(StringBuilder sb, string category, int depth)
+        {
+            AppendBooksByCategoryRecursive(root, category, depth, sb);
+        }
+
+        private void AppendBooksByCategoryRecursive(BookNode node, string category, int depth, StringBuilder sb)
+        {
+            if (node == null) return;
+            AppendBooksByCategoryRecursive(node.Left, category, depth, sb);
+
+            if (node.Book.getCategory().Equals(category, StringComparison.OrdinalIgnoreCase))
+            {
+                string indent = new string(' ', depth * 4);
+                sb.AppendLine($"{indent}{node.Book.getISBN()} - {node.Book.getTitle()}");
+            }
+
+            AppendBooksByCategoryRecursive(node.Right, category, depth, sb);
         }
     }
 }

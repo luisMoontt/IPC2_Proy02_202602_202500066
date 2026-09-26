@@ -28,6 +28,11 @@ namespace Biblioteca.Models
 
         public string getCategory() { return category; }
         public void setCategory(string category) { this.category = category; }
+
+        public string GetInfo()
+        {
+            return $"ISBN: {ISBN}\nTítulo: {title}\nAutor: {author}\nCategoría: {category}";
+        }
     }
 }
 

@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 
 namespace Biblioteca.Models
 {
@@ -43,6 +44,27 @@ namespace Biblioteca.Models
                 return false;
 
             return root != null && root.findCategory(categoryName) != null;
+        }
+
+        public string GetFullTreeText(CatalogBooks books, bool includeBooks)
+        {
+            StringBuilder sb = new StringBuilder();
+            Category actual = null;
+            while ((actual = root.GetNextAlphabetical(actual?.getName())) != null)
+            {
+                actual.AppendTree(sb, 0, books, includeBooks);
+            }
+            return sb.ToString();
+        }
+
+        public string GetSubtreeText(string categoryName, CatalogBooks books, bool includeBooks)
+        {
+            Category encontrada = root.findCategory(categoryName);
+            if (encontrada == null) return null;
+
+            StringBuilder sb = new StringBuilder();
+            encontrada.AppendTree(sb, 0, books, includeBooks);
+            return sb.ToString();
         }
     }
 }
