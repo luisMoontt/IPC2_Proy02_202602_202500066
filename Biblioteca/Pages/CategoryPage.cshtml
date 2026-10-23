@@ -1,0 +1,67 @@
+@page
+@model CategoryModel
+@{
+    ViewData["Title"] = "Categorías";
+}
+
+<style>
+    .contenedor { max-width: 900px; margin: 0 auto; font-family: Arial, sans-serif; color: #222; }
+    .panel { border: 1px solid #ccc; border-radius: 6px; padding: 16px; margin-bottom: 16px; background: #fafafa; }
+    .panel h2 { margin-top: 0; font-size: 18px; color: #333; }
+    label { display: block; margin-top: 8px; font-size: 14px; }
+    input[type=text] { width: 100%; padding: 6px; margin-top: 2px; border: 1px solid #bbb; border-radius: 4px; box-sizing: border-box; }
+    .fila { display: flex; gap: 10px; flex-wrap: wrap; }
+    .fila > div { flex: 1; min-width: 160px; }
+    button { padding: 8px 14px; border: 1px solid #999; border-radius: 4px; cursor: pointer; font-size: 14px; margin-top: 10px; margin-right: 6px; }
+    .btn-verde { background: #a5d6a7; }
+    .btn-celeste { background: #81d4fa; }
+    .btn-amarillo { background: #fff59d; }
+    .mensaje { margin-top: 8px; font-size: 14px; color: #444; }
+    .arbol-texto { background: #fff; border: 1px solid #ccc; border-radius: 6px; padding: 14px; white-space: pre; font-family: Consolas, monospace; overflow-x: auto; }
+</style>
+
+<div class="contenedor">
+    <h1>@ViewData["Title"]</h1>
+
+    <div class="panel">
+        <h2>Crear categoría</h2>
+        <form method="post" asp-page-handler="Crear">
+            <div class="fila">
+                <div>
+                    <label>Nombre</label>
+                    <input type="text" asp-for="NuevoNombre" />
+                </div>
+                <div>
+                    <label>Categoría padre (vacío = raíz)</label>
+                    <input type="text" asp-for="NuevoPadre" />
+                </div>
+            </div>
+            <button type="submit" class="btn-verde">Crear categoría</button>
+        </form>
+        @if (Model.MensajeCrear != null)
+        {
+            <p class="mensaje">@Model.MensajeCrear</p>
+        }
+    </div>
+
+    <div class="panel">
+        <h2>Buscar</h2>
+        <form method="post">
+            <label>Nombre de categoría o subcategoría</label>
+            <input type="text" asp-for="NombreBuscado" />
+            <div>
+                <button type="submit" asp-page-handler="ListarSubcategorias" class="btn-celeste">Listar Subcategorías</button>
+                <button type="submit" asp-page-handler="ListarLibros" class="btn-amarillo">Listar Libros</button>
+            </div>
+        </form>
+        @if (Model.MensajeAccion != null)
+        {
+            <p class="mensaje">@Model.MensajeAccion</p>
+        }
+    </div>
+
+    <div class="panel">
+        <h2>Estructura jerárquica</h2>
+        <div class="arbol-texto">@Model.TextoArbol</div>
+    </div>
+</div>

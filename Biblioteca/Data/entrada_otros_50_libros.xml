@@ -1,0 +1,392 @@
+<?xml version="1.0"?>
+<config>
+  <listaCategorias>
+    <categoria>Literatura</categoria>
+    <categoria padre="Literatura">Novela</categoria>
+    <categoria padre="Literatura">Realismo Magico</categoria>
+    <categoria padre="Literatura">Novela Latinoamericana</categoria>
+    <categoria>Teatro</categoria>
+    <categoria padre="Teatro">Drama Moderno</categoria>
+    <categoria padre="Teatro">Teatro Español</categoria>
+    <categoria>Poesia</categoria>
+    <categoria padre="Poesia">Poesia General</categoria>
+    <categoria>Ciencia Ficcion</categoria>
+    <categoria padre="Ciencia Ficcion">Distopica</categoria>
+    <categoria>Internet</categoria>
+    <categoria padre="Internet">Blogueros</categoria>
+  </listaCategorias>
+  <listaLibros>
+    <libro>
+      <ISBN>5001</ISBN>
+      <titulo>1984</titulo>
+      <autor>George Orwell</autor>
+      <categoria>Distopica</categoria>
+    </libro>
+    <libro>
+      <ISBN>5002</ISBN>
+      <titulo>Rebelion en la Granja</titulo>
+      <autor>George Orwell</autor>
+      <categoria>Distopica</categoria>
+    </libro>
+    <libro>
+      <ISBN>5003</ISBN>
+      <titulo>Un Mundo Feliz</titulo>
+      <autor>Aldous Huxley</autor>
+      <categoria>Distopica</categoria>
+    </libro>
+    <libro>
+      <ISBN>5004</ISBN>
+      <titulo>Fahrenheit 451</titulo>
+      <autor>Ray Bradbury</autor>
+      <categoria>Distopica</categoria>
+    </libro>
+    <libro>
+      <ISBN>5005</ISBN>
+      <titulo>El Cuento de la Criada</titulo>
+      <autor>Margaret Atwood</autor>
+      <categoria>Distopica</categoria>
+    </libro>
+    <libro>
+      <ISBN>5006</ISBN>
+      <titulo>Nosotros</titulo>
+      <autor>Yevgeni Zamiatin</autor>
+      <categoria>Distopica</categoria>
+    </libro>
+    <libro>
+      <ISBN>5007</ISBN>
+      <titulo>La Naranja Mecanica</titulo>
+      <autor>Anthony Burgess</autor>
+      <categoria>Distopica</categoria>
+    </libro>
+    <libro>
+      <ISBN>5008</ISBN>
+      <titulo>Cien Años de Soledad</titulo>
+      <autor>Gabriel Garcia Marquez</autor>
+      <categoria>Realismo Magico</categoria>
+    </libro>
+    <libro>
+      <ISBN>5009</ISBN>
+      <titulo>El Amor en los Tiempos del Colera</titulo>
+      <autor>Gabriel Garcia Marquez</autor>
+      <categoria>Realismo Magico</categoria>
+    </libro>
+    <libro>
+      <ISBN>5010</ISBN>
+      <titulo>Cronica de una Muerte Anunciada</titulo>
+      <autor>Gabriel Garcia Marquez</autor>
+      <categoria>Realismo Magico</categoria>
+    </libro>
+    <libro>
+      <ISBN>5011</ISBN>
+      <titulo>El Coronel no Tiene Quien le Escriba</titulo>
+      <autor>Gabriel Garcia Marquez</autor>
+      <categoria>Realismo Magico</categoria>
+    </libro>
+    <libro>
+      <ISBN>5012</ISBN>
+      <titulo>Del Amor y Otros Demonios</titulo>
+      <autor>Gabriel Garcia Marquez</autor>
+      <categoria>Realismo Magico</categoria>
+    </libro>
+    <libro>
+      <ISBN>5013</ISBN>
+      <titulo>El General en su Laberinto</titulo>
+      <autor>Gabriel Garcia Marquez</autor>
+      <categoria>Realismo Magico</categoria>
+    </libro>
+    <libro>
+      <ISBN>5014</ISBN>
+      <titulo>El Otoño del Patriarca</titulo>
+      <autor>Gabriel Garcia Marquez</autor>
+      <categoria>Realismo Magico</categoria>
+    </libro>
+    <libro>
+      <ISBN>5015</ISBN>
+      <titulo>La Hojarasca</titulo>
+      <autor>Gabriel Garcia Marquez</autor>
+      <categoria>Realismo Magico</categoria>
+    </libro>
+    <libro>
+      <ISBN>5016</ISBN>
+      <titulo>Memoria de mis Putas Tristes</titulo>
+      <autor>Gabriel Garcia Marquez</autor>
+      <categoria>Realismo Magico</categoria>
+    </libro>
+    <libro>
+      <ISBN>5017</ISBN>
+      <titulo>Vivir para Contarla</titulo>
+      <autor>Gabriel Garcia Marquez</autor>
+      <categoria>Realismo Magico</categoria>
+    </libro>
+    <libro>
+      <ISBN>5018</ISBN>
+      <titulo>Doce Cuentos Peregrinos</titulo>
+      <autor>Gabriel Garcia Marquez</autor>
+      <categoria>Realismo Magico</categoria>
+    </libro>
+    <libro>
+      <ISBN>5019</ISBN>
+      <titulo>Veinte Poemas de Amor y una Cancion Desesperada</titulo>
+      <autor>Pablo Neruda</autor>
+      <categoria>Poesia General</categoria>
+    </libro>
+    <libro>
+      <ISBN>5020</ISBN>
+      <titulo>Canto General</titulo>
+      <autor>Pablo Neruda</autor>
+      <categoria>Poesia General</categoria>
+    </libro>
+    <libro>
+      <ISBN>5021</ISBN>
+      <titulo>Odas Elementales</titulo>
+      <autor>Pablo Neruda</autor>
+      <categoria>Poesia General</categoria>
+    </libro>
+    <libro>
+      <ISBN>5022</ISBN>
+      <titulo>Romancero Gitano</titulo>
+      <autor>Federico Garcia Lorca</autor>
+      <categoria>Poesia General</categoria>
+    </libro>
+    <libro>
+      <ISBN>5023</ISBN>
+      <titulo>Poeta en Nueva York</titulo>
+      <autor>Federico Garcia Lorca</autor>
+      <categoria>Poesia General</categoria>
+    </libro>
+    <libro>
+      <ISBN>5024</ISBN>
+      <titulo>Piedra de Sol</titulo>
+      <autor>Octavio Paz</autor>
+      <categoria>Poesia General</categoria>
+    </libro>
+    <libro>
+      <ISBN>5025</ISBN>
+      <titulo>Arbol de Diana</titulo>
+      <autor>Alejandra Pizarnik</autor>
+      <categoria>Poesia General</categoria>
+    </libro>
+    <libro>
+      <ISBN>5026</ISBN>
+      <titulo>Desolacion</titulo>
+      <autor>Gabriela Mistral</autor>
+      <categoria>Poesia General</categoria>
+    </libro>
+    <libro>
+      <ISBN>5027</ISBN>
+      <titulo>Poemas de Otros</titulo>
+      <autor>Mario Benedetti</autor>
+      <categoria>Poesia General</categoria>
+    </libro>
+    <libro>
+      <ISBN>5028</ISBN>
+      <titulo>El Amor es un Perro del Infierno</titulo>
+      <autor>Charles Bukowski</autor>
+      <categoria>Poesia General</categoria>
+    </libro>
+    <libro>
+      <ISBN>5029</ISBN>
+      <titulo>Hojas de Hierba</titulo>
+      <autor>Walt Whitman</autor>
+      <categoria>Poesia General</categoria>
+    </libro>
+    <libro>
+      <ISBN>5030</ISBN>
+      <titulo>Elegias de Duino</titulo>
+      <autor>Rainer Maria Rilke</autor>
+      <categoria>Poesia General</categoria>
+    </libro>
+    <libro>
+      <ISBN>5031</ISBN>
+      <titulo>Las Flores del Mal</titulo>
+      <autor>Charles Baudelaire</autor>
+      <categoria>Poesia General</categoria>
+    </libro>
+    <libro>
+      <ISBN>5032</ISBN>
+      <titulo>Una Temporada en el Infierno</titulo>
+      <autor>Arthur Rimbaud</autor>
+      <categoria>Poesia General</categoria>
+    </libro>
+    <libro>
+      <ISBN>5033</ISBN>
+      <titulo>Aullido</titulo>
+      <autor>Allen Ginsberg</autor>
+      <categoria>Poesia General</categoria>
+    </libro>
+    <libro>
+      <ISBN>5034</ISBN>
+      <titulo>Azul...</titulo>
+      <autor>Ruben Dario</autor>
+      <categoria>Poesia General</categoria>
+    </libro>
+    <libro>
+      <ISBN>5035</ISBN>
+      <titulo>Poemas</titulo>
+      <autor>Emily Dickinson</autor>
+      <categoria>Poesia General</categoria>
+    </libro>
+    <libro>
+      <ISBN>5036</ISBN>
+      <titulo>Cuatro Cuartetos</titulo>
+      <autor>T.S. Eliot</autor>
+      <categoria>Poesia General</categoria>
+    </libro>
+    <libro>
+      <ISBN>5037</ISBN>
+      <titulo>Don Quijote de la Mancha</titulo>
+      <autor>Miguel de Cervantes</autor>
+      <categoria>Novela</categoria>
+    </libro>
+    <libro>
+      <ISBN>5038</ISBN>
+      <titulo>El Extranjero</titulo>
+      <autor>Albert Camus</autor>
+      <categoria>Novela</categoria>
+    </libro>
+    <libro>
+      <ISBN>5039</ISBN>
+      <titulo>El Principito</titulo>
+      <autor>Antoine de Saint-Exupery</autor>
+      <categoria>Novela</categoria>
+    </libro>
+    <libro>
+      <ISBN>5040</ISBN>
+      <titulo>Los Miserables</titulo>
+      <autor>Victor Hugo</autor>
+      <categoria>Novela</categoria>
+    </libro>
+    <libro>
+      <ISBN>5041</ISBN>
+      <titulo>Subir a por Aire</titulo>
+      <autor>George Orwell</autor>
+      <categoria>Novela</categoria>
+    </libro>
+    <libro>
+      <ISBN>5042</ISBN>
+      <titulo>Los Dias de Birmania</titulo>
+      <autor>George Orwell</autor>
+      <categoria>Novela</categoria>
+    </libro>
+    <libro>
+      <ISBN>5043</ISBN>
+      <titulo>Homenaje a Cataluña</titulo>
+      <autor>George Orwell</autor>
+      <categoria>Novela</categoria>
+    </libro>
+    <libro>
+      <ISBN>5044</ISBN>
+      <titulo>Sin Blanca en Paris y Londres</titulo>
+      <autor>George Orwell</autor>
+      <categoria>Novela</categoria>
+    </libro>
+    <libro>
+      <ISBN>5045</ISBN>
+      <titulo>El Camino a Wigan Pier</titulo>
+      <autor>George Orwell</autor>
+      <categoria>Novela</categoria>
+    </libro>
+    <libro>
+      <ISBN>5046</ISBN>
+      <titulo>Matar a un Elefante</titulo>
+      <autor>George Orwell</autor>
+      <categoria>Novela</categoria>
+    </libro>
+    <libro>
+      <ISBN>5047</ISBN>
+      <titulo>Muerte de un Viajante</titulo>
+      <autor>Arthur Miller</autor>
+      <categoria>Drama Moderno</categoria>
+    </libro>
+    <libro>
+      <ISBN>5048</ISBN>
+      <titulo>Las Brujas de Salem</titulo>
+      <autor>Arthur Miller</autor>
+      <categoria>Drama Moderno</categoria>
+    </libro>
+    <libro>
+      <ISBN>5049</ISBN>
+      <titulo>Todos Eran Mis Hijos</titulo>
+      <autor>Arthur Miller</autor>
+      <categoria>Drama Moderno</categoria>
+    </libro>
+    <libro>
+      <ISBN>5050</ISBN>
+      <titulo>Panorama desde el Puente</titulo>
+      <autor>Arthur Miller</autor>
+      <categoria>Drama Moderno</categoria>
+    </libro>
+    <libro>
+      <ISBN>5051</ISBN>
+      <titulo>Despues de la Caida</titulo>
+      <autor>Arthur Miller</autor>
+      <categoria>Drama Moderno</categoria>
+    </libro>
+    <libro>
+      <ISBN>5052</ISBN>
+      <titulo>Un Enemigo del Pueblo</titulo>
+      <autor>Arthur Miller</autor>
+      <categoria>Drama Moderno</categoria>
+    </libro>
+    <libro>
+      <ISBN>5053</ISBN>
+      <titulo>El Precio</titulo>
+      <autor>Arthur Miller</autor>
+      <categoria>Drama Moderno</categoria>
+    </libro>
+    <libro>
+      <ISBN>5054</ISBN>
+      <titulo>Incidente en Vichy</titulo>
+      <autor>Arthur Miller</autor>
+      <categoria>Drama Moderno</categoria>
+    </libro>
+    <libro>
+      <ISBN>5055</ISBN>
+      <titulo>Pedro Paramo</titulo>
+      <autor>Juan Rulfo</autor>
+      <categoria>Novela Latinoamericana</categoria>
+    </libro>
+    <libro>
+      <ISBN>5056</ISBN>
+      <titulo>La Casa de los Espiritus</titulo>
+      <autor>Isabel Allende</autor>
+      <categoria>Novela Latinoamericana</categoria>
+    </libro>
+    <libro>
+      <ISBN>5057</ISBN>
+      <titulo>Como Agua para Chocolate</titulo>
+      <autor>Laura Esquivel</autor>
+      <categoria>Novela Latinoamericana</categoria>
+    </libro>
+    <libro>
+      <ISBN>5058</ISBN>
+      <titulo>Rayuela</titulo>
+      <autor>Julio Cortazar</autor>
+      <categoria>Novela Latinoamericana</categoria>
+    </libro>
+    <libro>
+      <ISBN>5059</ISBN>
+      <titulo>La Ciudad y los Perros</titulo>
+      <autor>Mario Vargas Llosa</autor>
+      <categoria>Novela Latinoamericana</categoria>
+    </libro>
+    <libro>
+      <ISBN>5060</ISBN>
+      <titulo>Bodas de Sangre</titulo>
+      <autor>Federico Garcia Lorca</autor>
+      <categoria>Teatro Español</categoria>
+    </libro>
+    <libro>
+      <ISBN>5061</ISBN>
+      <titulo>La Casa de Bernarda Alba</titulo>
+      <autor>Federico Garcia Lorca</autor>
+      <categoria>Teatro Español</categoria>
+    </libro>
+    <libro>
+      <ISBN>5062</ISBN>
+      <titulo>El Libro Troll</titulo>
+      <autor>El Rubius</autor>
+      <categoria>Blogueros</categoria>
+    </libro>
+  </listaLibros>
+</config>

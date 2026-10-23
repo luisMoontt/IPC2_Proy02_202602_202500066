@@ -1,0 +1,121 @@
+@page
+@model BookModel
+@{
+    ViewData["Title"] = "Libros";
+}
+
+<style>
+    .contenedor { max-width: 900px; margin: 0 auto; font-family: Arial, sans-serif; color: #222; }
+    .panel { border: 1px solid #ccc; border-radius: 6px; padding: 16px; margin-bottom: 16px; background: #fafafa; }
+    .panel h2 { margin-top: 0; font-size: 18px; color: #333; }
+    label { display: block; margin-top: 8px; font-size: 14px; }
+    input[type=text], input[type=number] { width: 100%; padding: 6px; margin-top: 2px; border: 1px solid #bbb; border-radius: 4px; box-sizing: border-box; }
+    .fila { display: flex; gap: 10px; flex-wrap: wrap; }
+    .fila > div { flex: 1; min-width: 140px; }
+    button { padding: 8px 14px; border: 1px solid #999; border-radius: 4px; cursor: pointer; font-size: 14px; margin-top: 10px; margin-right: 6px; }
+    .btn-verde { background: #a5d6a7; }
+    .btn-celeste { background: #81d4fa; }
+    .btn-amarillo { background: #fff59d; }
+    .mensaje { margin-top: 8px; font-size: 14px; color: #444; }
+    .info-libro { background: #fff; border: 1px solid #ccc; border-radius: 6px; padding: 14px; }
+    .info-libro p { margin: 6px 0; }
+    .arbol-contenedor { background: #fff; border: 1px solid #ccc; border-radius: 6px; padding: 12px; overflow-x: auto; text-align: center; }
+</style>
+
+<div class="contenedor">
+    <h1>@ViewData["Title"]</h1>
+    <div class="panel">
+        <h2>Crear libro</h2>
+        <form method="post" asp-page-handler="Crear">
+            <div class="fila">
+                <div>
+                    <label>ISBN</label>
+                    <input type="number" asp-for="NuevoIsbn" />
+                </div>
+                <div>
+                    <label>Título</label>
+                    <input type="text" asp-for="NuevoTitulo" />
+                </div>
+                <div>
+                    <label>Autor</label>
+                    <input type="text" asp-for="NuevoAutor" />
+                </div>
+                <div>
+                    <label>Categoría</label>
+                    <input type="text" asp-for="NuevoCategoria" />
+                </div>
+            </div>
+            <button type="submit" class="btn-verde">Crear libro</button>
+        </form>
+        @if (Model.MensajeCrear != null)
+        {
+            <p class="mensaje">@Model.MensajeCrear</p>
+        }
+    </div>
+    <div class="panel">
+        <h2>Filtros</h2>
+
+        <form method="post" asp-page-handler="Buscar">
+            <label>Buscar por ISBN (búsqueda exacta)</label>
+            <div class="fila">
+                <div>
+                    <input type="number" asp-for="IsbnBuscado" />
+                </div>
+                <div>
+                    <button type="submit" class="btn-celeste">Buscar</button>
+                </div>
+            </div>
+        </form>
+
+        @if (Model.Modo == "libro" && Model.LibroMostrado != null)
+        {
+            <form method="post" asp-page-handler="Eliminar">
+                <input type="hidden" asp-for="IsbnBuscado" />
+                <button type="submit" class="btn-amarillo">Eliminar libro encontrado</button>
+            </form>
+        }
+
+        <div>
+            <form method="post" asp-page-handler="Min" style="display:inline;">
+                <button type="submit" class="btn-celeste">ISBN menor</button>
+            </form>
+            <form method="post" asp-page-handler="Max" style="display:inline;">
+                <button type="submit" class="btn-celeste">ISBN mayor</button>
+            </form>
+            <form method="post" asp-page-handler="MostrarTodo" style="display:inline;">
+                <button type="submit" class="btn-verde">Mostrar árbol completo</button>
+            </form>
+        </div>
+
+        @if (Model.MensajeAccion != null)
+        {
+            <p class="mensaje">@Model.MensajeAccion</p>
+        }
+    </div>
+    <div class="panel">
+        <h2>Visualización</h2>
+
+        @if (Model.Modo == "libro" && Model.LibroMostrado != null)
+        {
+            <div class="info-libro">
+                <p><strong>ISBN:</strong> @Model.LibroMostrado.getISBN()</p>
+                <p><strong>Título:</strong> @Model.LibroMostrado.getTitle()</p>
+                <p><strong>Autor:</strong> @Model.LibroMostrado.getAuthor()</p>
+                <p><strong>Categoría:</strong> @Model.LibroMostrado.getCategory()</p>
+            </div>
+        }
+        else
+        {
+            <div class="arbol-contenedor">
+                @if (!string.IsNullOrEmpty(Model.ArbolSvg))
+                {
+                    @Html.Raw(Model.ArbolSvg)
+                }
+                else
+                {
+                    <p>No se pudo generar el gráfico (verifica que Graphviz esté instalado y disponible en el PATH), o el árbol aún está vacío.</p>
+                }
+            </div>
+        }
+    </div>
+</div>
